@@ -1,0 +1,65 @@
+main {
+    flex: 1;
+}
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 3rem auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+h1, h2 {    
+    color: #333;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+.step {
+    margin-bottom: 1rem;
+}
+.step h3 {
+    color: #2196F3;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color 0.3s ease;
+}
+.step h3:hover {
+    color: #1769aa;
+}
+.step h3::after {
+    content: '\25BC'; /* Down arrow icon */
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+.step h3.open::after {
+    transform: rotate(180deg); /* Rotate arrow when open */
+}
+.step-content {
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid #2196F3;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+.step-content.open {
+    max-height: 500px; /* Set a large enough value to accommodate content */
+    opacity: 1;
+    transform: translateY(0);
+}
+.members {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #555;
+}
