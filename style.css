@@ -4,10 +4,11 @@ body {
     padding: 0;
     line-height: 1;
     color: #333;
-    background: url(NamPS.jpg) no-repeat center center fixed;
+    background: url(NamPS.jpg) no-repeat center center/cover;
     background-size: cover;
     display: flex;
-    
+    justify-content: center;
+    /* align-items: center; */
     flex-direction: column;
     min-height: 100vh;
 }
