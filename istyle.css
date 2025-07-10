@@ -1,0 +1,62 @@
+#languageDropdown {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0);
+    color: #333;
+    border: 1px solid #0000005d;
+    padding: 0.5rem;
+    border-radius: 7px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header {
+    margin-top: 50px;
+    margin-bottom: -50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-shadow: #333 0 0px 20px;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    padding: 1.5rem 0;
+}
+.cont {
+        background: #00000075;
+}
+header h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 0;
+}
+header p {
+    font-size: 1rem;
+}
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 3rem auto;
+    background: rgba(255, 255, 255, 0.808);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+h1, h2 {
+    color: #333;
+}
+main {
+    flex: 1;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}

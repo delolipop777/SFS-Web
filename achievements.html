@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        nav {
+            background: #2196F3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav img {
+            height: 80px;
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            flex: 1;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 3rem auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+        #languageDropdown {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: white;
+            color: #333;
+            border: 1px solid #ccc;
+            padding: 0.5rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="SFS_Logo.png" alt="SFS Logo">
+        </a>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="steps.html">7 Steps</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <select id="languageDropdown">
+                <option value="en">English</option>
+                <option value="uz">Uzbek</option>
+                <option value="ru">Russian</option>
+            </select>
+            <h1>Our Achievements</h1>
+            <p>The Sustainable Future Society (SFS) is proud to be recognized as an Eco-School. This prestigious title reflects our commitment to sustainability and environmental awareness.</p>
+            <p>Thanks to the efforts of our dedicated members, the Presidential School in Namangan has been awarded the <strong>Green Flag</strong> for its outstanding environmental initiatives. This achievement highlights our success in implementing the Eco-Schools program and fostering a culture of sustainability within our community.</p>
+            <p>We continue to strive for excellence in promoting ecological awareness and sustainable practices, making a positive impact on our environment and inspiring others to join our mission.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sustainable Future Society. All rights reserved.</p>
+    </footer>
+</body>
+</html>

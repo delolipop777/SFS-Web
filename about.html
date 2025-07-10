@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About SFS</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes the full height of the viewport */
+        }
+        nav {
+            background: #2196F3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1rem;
+        }
+        nav img {
+            height: 80px; /* Keep the size */
+            margin-top: 10px; /* Add margin to lower the logo */
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #languageDropdown {
+            background: white;
+            color: #333;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding: 0.5rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        main {
+            flex: 1; /* Push the footer to the bottom */
+        }
+        section {
+            position: relative;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 3rem auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="SFS_Logo.png" alt="SFS Logo">
+        </a>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="steps.html">7 Steps</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <select id="languageDropdown" style="position: absolute; top: 1rem; right: 1rem;">
+                <option value="en">English</option>
+                <option value="uz">Uzbek</option>
+                <option value="ru">Russian</option>
+            </select>
+            <h2>About Sustainable Future Society</h2>
+            <p>The Sustainable Future Society (SFS) is an environmental volunteer club run by the active students of the Presidential School in Namangan. The club's main goal is to protect the environment, raise ecological awareness, and promote a sustainable lifestyle.</p>
+            <p>Under the leadership of Abrorjon Sadriddionov, the coordinator of the Eco-Schools Namangan program, SFS has achieved remarkable milestones, including earning the prestigious Green Flag for its environmental initiatives.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sustainable Future Society. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                aboutTitle: "About Sustainable Future Society",
+                aboutContent: "The Sustainable Future Society (SFS) is an environmental volunteer club run by the active students of the Presidential School in Namangan. The club's main goal is to protect the environment, raise ecological awareness, and promote a sustainable lifestyle."
+            },
+            uz: {
+                aboutTitle: "Barqaror Kelajak Jamiyati haqida",
+                aboutContent: "Barqaror Kelajak Jamiyati (SFS) Namangan Prezident maktabining faol o'quvchilari tomonidan boshqariladigan ekologik ko'ngilli klubdir. Klubning asosiy maqsadi atrof-muhitni himoya qilish, ekologik xabardorlikni oshirish va barqaror turmush tarzini targ'ib qilishdir."
+            },
+            ru: {
+                aboutTitle: "О Обществе устойчивого будущего",
+                aboutContent: "Общество устойчивого будущего (SFS) - это экологический волонтерский клуб, управляемый активными учениками Президентской школы в Намангане. Основная цель клуба - защищать окружающую среду, повышать экологическую осведомленность и продвигать устойчивый образ жизни."
+            }
+        };
+
+        document.getElementById("languageDropdown").addEventListener("change", (event) => {
+            const selectedLanguage = event.target.value;
+            document.querySelector("main section h2").textContent = translations[selectedLanguage].aboutTitle;
+            document.querySelector("main section p").textContent = translations[selectedLanguage].aboutContent;
+        });
+    </script>
+</body>
+</html>
