@@ -30,11 +30,6 @@
 
         <main>
             <section>
-                <select id="languageDropdown">
-                    <option value="en">English</option>
-                    <option value="uz">Uzbek</option>
-                    <option value="ru">Russian</option>
-                </select>
                 <h2>About SFS</h2>
                 <p>The Sustainable Future Society (SFS) is led by active students of the Presidential School in Namangan. Our mission is to protect the environment, raise ecological awareness, and promote sustainable living.</p>
                 <p>Under the guidance of Abrorjon Sadriddionov, SFS has achieved significant milestones, including earning the Green Flag for its environmental initiatives.</p>
@@ -46,36 +41,5 @@
     <footer>
         <p>&copy; 2025 Sustainable Future Society. All rights reserved.</p>
     </footer>
-
-    <script>
-        const translations = {
-            en: {
-                welcome: "Welcome to SFS",
-                description: "An environmental volunteer club fostering sustainability and ecological awareness.",
-                aboutTitle: "About SFS",
-                aboutContent: "The Sustainable Future Society (SFS) is led by active students of the Presidential School in Namangan. Our mission is to protect the environment, raise ecological awareness, and promote sustainable living."
-            },
-            uz: {
-                welcome: "SFSga xush kelibsiz",
-                description: "Barqarorlik va ekologik xabardorlikni targ'ib qiluvchi ko'ngilli klub.",
-                aboutTitle: "SFS haqida",
-                aboutContent: "Barqaror Kelajak Jamiyati (SFS) Namangan Prezident maktabining faol o'quvchilari tomonidan boshqariladi. Bizning vazifamiz atrof-muhitni himoya qilish, ekologik xabardorlikni oshirish va barqaror turmush tarzini targ'ib qilishdir."
-            },
-            ru: {
-                welcome: "Добро пожаловать в SFS",
-                description: "Волонтерский клуб, продвигающий устойчивость и экологическую осведомленность.",
-                aboutTitle: "О SFS",
-                aboutContent: "Общество устойчивого будущего (SFS) возглавляют активные ученики Президентской школы в Намангане. Наша миссия - защищать окружающую среду, повышать экологическую осведомленность и продвигать устойчивый образ жизни."
-            }
-        };
-
-        document.getElementById("languageDropdown").addEventListener("change", (event) => {
-            const selectedLanguage = event.target.value;
-            document.querySelector("header h1").textContent = translations[selectedLanguage].welcome;
-            document.querySelector("header p").textContent = translations[selectedLanguage].description;
-            document.querySelector("main section h2").textContent = translations[selectedLanguage].aboutTitle;
-            document.querySelector("main section p").textContent = translations[selectedLanguage].aboutContent;
-        });
-    </script>
 </body>
 </html>
